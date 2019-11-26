@@ -9,41 +9,28 @@ import { Text, StyleSheet, FlatList, View, ImageBackground, Button} from 'react-
 //     {Festival: 'Figura Festival', Location: 'Kawasan Megamas'}
 // ]
 
-const placeManado = ({ navigation }) => {
+const placeBitung = ({ navigation }) => {
     return (
-        <ImageBackground source={require('../assets/b.jpg')} style={{width: '100%', height: '100%'}}>
-            <View >
+        <ImageBackground source={require('../assets/Bitung.jpg')} style={{width: '100%', height: '100%'}}>
             <View style={styles.followButton}>
             <Button 
-                title="Manado Fiesta"
-                onPress={() => navigation.navigate('ManadoFest1')}
+                title="Festival Pesona Selat Lembeh"
+                onPress={() => navigation.navigate('BitungFest1')}
            />
            </View>
            <View style={styles.followButton}>
            <Button 
-                title="Christmas Festival"
-                onPress={() => navigation.navigate('ManadoFest2')}
+                title="Colorful Bitung"
+                onPress={() => navigation.navigate('BitungFest2')}
            />
            </View>
            <View style={styles.followButton}>
            <Button 
-                title="Festival Pesona Bunaken"
-                onPress={() => navigation.navigate('ManadoFest3')}
+                title="Tulede Festival"
+                onPress={() => navigation.navigate('BitungFest3')}
             />
             </View>
-            <View style={styles.followButton}>
-            <Button 
-                title="Telkomsel Langit Musik Pagelaran Festival"
-                onPress={() => navigation.navigate('ManadoFest4')}
-            />
-            </View>
-            <View style={styles.followButton}>
-            <Button 
-                title="Figura Festival"
-                onPress={() => navigation.navigate('ManadoFest5')}
-            />
-            </View>
-            </View>
+            
         </ImageBackground>
     );
 };
@@ -52,7 +39,7 @@ const styles = StyleSheet.create({
       flex: 1,
       alignItems: 'center',
       justifyContent: 'center',
-      margin : 20
+      margin : 120
     },
     ukuran:{
         width : 120, height : 120
@@ -72,4 +59,4 @@ const styles = StyleSheet.create({
     },
   });
 
-export default placeManado;
+export default placeBitung;
